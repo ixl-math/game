@@ -1,0 +1,425 @@
+#shake{
+    width: 600px;
+    background-image: url(shake.png);
+    background-size: 600px;
+}
+
+.butt{
+    width: 600px;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+
+.butt:hover{
+  cursor: url('slap.png'), auto;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.butt:active{
+    cursor: url('slap2.png'), auto;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(117, 166, 198);
+    font-family: 'Dish Out', sans-serif;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  #numberPlace{
+    font-size: 35px;
+    font-family: 'Dish Out', sans-serif;
+}
+
+  .game{
+    background:url(@bgImage);
+    background-size: cover;
+    margin-left: -600px;
+    border: #2e1a12 solid 8px;
+    -webkit-border-image: url(@image) 200 stretch;
+    -moz-border-image: url(@image) 200 stretch;
+    border-image: url(@image) 200 stretch;
+    -webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+    width: 600px;
+  }
+
+  .well{
+    -webkit-animation: breathing 5s ease-out infinite normal;
+    animation: breathing 5s ease-out infinite normal;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Dish Out', sans-serif;
+    box-shadow: 0px 10px 0px 0px rgb(202, 201, 201);
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(241, 234, 43);
+    width: 70%;
+    padding-top: 10px;
+    border:2px solid white;
+
+}
+
+  .container{
+    display: flex;
+  }
+
+  .buy{
+    outline: none;
+    border: none;
+    background-color: rgb(117, 166, 198);
+    margin-bottom: 10px;
+   height: 50px;
+   text-align: center;
+   width: 100%;
+  }
+
+  #buy2{
+    width: 100%;
+    margin-bottom: 10px;
+   height: 50px;
+   text-align: center;
+  }
+
+  .store{
+    text-align: center;
+
+    width: 800px;
+    height: 98vh;
+    background:url(@bgImage);
+    background-size: cover;
+  
+    border: #2e1a12 solid 8px;
+    -webkit-border-image: url(@image) 200 stretch;
+    -moz-border-image: url(@image) 200 stretch;
+    border-image: url(@image) 200 stretch;
+    -webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+    background-color: rgb(59, 154, 217);
+  }
+
+  .head{
+    display: inline;
+    border: 4px solid;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .lable{
+    -webkit-animation: breathing 5s ease-out infinite normal;
+    animation: breathing 5s ease-out infinite normal;
+    -webkit-font-smoothing: antialiased;
+    color: black;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 0px 0px rgb(202, 201, 201);
+    border:2px solid white;
+    border-radius: 30px;
+    padding-top: 10px;
+    text-align: center;
+    width: 80%;
+    height: 50px;
+    background-color: rgb(241, 234, 43);
+  }
+
+  #buy2{
+    background-color: rgb(241, 234, 43);
+    box-shadow: 0px 10px 0px 0px rgb(202, 201, 201);
+    width: 100%;
+    height: 50px;
+  }
+
+  @-webkit-keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    25% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    60% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    100% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  
+  @keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    25% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    60% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    100% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  
+  .setting{
+    width: 100%;
+    height: 80px;
+    border-bottom: 7px solid;
+    display: flex;
+  }
+
+  .card{
+    background-color: rgb(59, 154, 217);
+    width: 115px;
+    height: 80px;
+    border: 1px solid;
+    text-align: center;
+
+  }
+
+  .card p{
+    -webkit-animation: breathing 5s ease-out infinite normal;
+    animation: breathing 5s ease-out infinite normal;
+    -webkit-font-smoothing: antialiased;
+    color: black;
+    box-shadow: 0px 10px 0px 0px rgb(202, 201, 201);
+    border:2px solid white;
+    border-radius: 30px;
+    text-align: center;
+    background-color: rgb(241, 234, 43);
+    width: 80%;
+    height: 30px;
+    padding-top: 10px;
+    margin-left: 10px;
+  }
+
+  .card p:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  
+  @image: 'http://pancaketheorem.com/stuff/demos/borderimage/wood.png';
+  @bgImage:'http://tumodaurbana.com/wp-content/uploads/2013/05/tumodaurbana-expo-dali.jpg';
+  @size:200px;
+
+  .box1{
+  background:url(@bgImage);
+  background-size: cover;
+
+  border: #2e1a12 solid 8px;
+  -webkit-border-image: url(@image) 200 stretch;
+  -moz-border-image: url(@image) 200 stretch;
+  border-image: url(@image) 200 stretch;
+  -webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+    background-color: blueviolet;
+    width: 97%;
+    height: 84vh;
+  }
+
+  .box2{
+    display: flex;
+    background:url(@bgImage);
+    background-size: cover;
+  
+    border: #2e1a12 solid 8px;
+    -webkit-border-image: url(@image) 200 stretch;
+    -moz-border-image: url(@image) 200 stretch;
+    border-image: url(@image) 200 stretch;
+    -webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+
+    background-color: blue;
+    width: 97%;
+    height: 84vh;
+    display: none;
+    max-width: 97%;
+
+  }
+
+  .box3{
+    background:url(@bgImage);
+    background-size: cover;
+  
+    border: #2e1a12 solid 8px;
+    -webkit-border-image: url(@image) 200 stretch;
+    -moz-border-image: url(@image) 200 stretch;
+    border-image: url(@image) 200 stretch;
+    -webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+
+    display: none;
+    background-color: rgb(255, 0, 153);
+    width: 97%;
+    height: 84vh;
+  }
+
+  .box4{
+    background:url(@bgImage);
+    background-size: cover;
+  
+    border: #2e1a12 solid 8px;
+    -webkit-border-image: url(@image) 200 stretch;
+    -moz-border-image: url(@image) 200 stretch;
+    border-image: url(@image) 200 stretch;
+    -webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+
+    display: none;
+    background-color: chartreuse;
+    width: 97%;
+    height: 84vh;
+  }
+
+  .box4{
+    background:url(@bgImage);
+    background-size: cover;
+  
+    border: #2e1a12 solid 8px;
+    -webkit-border-image: url(@image) 200 stretch;
+    -moz-border-image: url(@image) 200 stretch;
+    border-image: url(@image) 200 stretch;
+    -webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+
+    display: none;
+    background-color: rgb(255, 128, 0);
+    width: 97%;
+    height: 84vh;
+  }
+
+  .box5{
+    background:url(@bgImage);
+    background-size: cover;
+  
+    border: #2e1a12 solid 8px;
+    -webkit-border-image: url(@image) 200 stretch;
+    -moz-border-image: url(@image) 200 stretch;
+    border-image: url(@image) 200 stretch;
+    -webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+    display: none;
+    background-color: rgb(255, 0, 242);
+    width: 97%;
+    max-width: 97%;
+    height: 84vh;
+  }
+
+
+  .cst{
+    width: 109.4px;
+    height: 100px;
+    background-color: #3b9ad9;
+    border: 2px solid;
+    float: left;
+    background-image: url(butt.png);
+    background-position: center;
+  }
+
+  #cst1:hover{
+    transform: scale(1.7);
+  }
+
+  #cst2:hover{
+    transform: scale(1.5);
+  }
+
+  #cst3:hover{
+    transform: scale(1.2);
+  }
+
+  #cst4:hover{
+    transform: scale(1.1);
+  }
+
+  .skin{
+    padding-top: 10px;
+    margin-top: -20px;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    display: block;
+  }
+
+  .back{
+    width: 600px;
+    height: 100vh;
+}
+
+#viewport{
+  width: 610px;
+  height: 100vh;
+}
+
+.new_Btn{
+  margin-bottom: -45px;
+  border-radius: 3px;
+  box-shadow: 0px 10px 0px 0px rgb(202, 201, 201);
+  border:2px solid white;
+  background-color: rgb(241, 234, 43);
+}
+
+#files{
+  display: none;
+}
+
+#shake {
+  padding: 10px;
+}
+
+.mute{
+  width: 100%;
+  height: 30px;
+}
+
+.hr{
+  width: 100%;
+  height: 1px;
+  background-color: #3b9ad9;
+  border: #2e1a12 solid 8px;
+    -webkit-border-image: url(@image) 200 stretch;
+    -moz-border-image: url(@image) 200 stretch;
+    border-image: url(@image) 200 stretch;
+    -webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+}
+
+.skin2{
+  text-align: center;
+  height: 185px;
+}
+
+input[type=color]{
+  background-color: rgb(241, 234, 43);
+  outline: none;
+  border: none;
+}
+
+  .color{
+    background-color: rgb(241, 234, 43);
+    width: 290px;
+    border-radius: 3px;
+    box-shadow: 0px 10px 0px 0px rgb(202, 201, 201);
+    border:2px solid white;
+    margin: 0 auto;
+  }

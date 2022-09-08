@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link href="http://fonts.cdnfonts.com/css/dish-out" rel="stylesheet">
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/dish-out');
+</style>
+
+    <title>shake</title>
+</head>
+<body id="myAudio">
+    
+
+    <div class="container">
+        <div class="back">
+            <img src="https://www.cartersmyplumber.com/wp-content/uploads/2019/08/IMG_1916.jpeg" id="viewport" />
+        </div>
+        <div class="game" >
+            <center>
+                <h1 class="well">Welcome, Slapper</h1>
+                <h1 id="numberPlace">0</h1>
+              </center>
+            <div class="shake-slow" id="shake">
+                <span id="bar">
+                <img id="plus" onclick="play()" class="butt" src="butt.png" >
+                </span>
+            </div>
+            </div>
+
+            <div class="head">
+                <div class="setting">
+                    <div onclick="show2()" class="card"><p>Setting</p></div>
+                    <div onclick="show3()" class="card"><p>About</p></div>
+                    <div onclick="show4()" class="card"><p>Help</p></div>
+                    <div onclick="show5()" class="card"><p>More</p></div>
+                </div>
+                <div id="box1" class="box1">
+                    main
+                </div>
+                <div id="box2" class="box2">
+                    <div class="skin">
+                        <h2>booty and background</h2>
+                        <div class="hr"></div>
+                    </div>
+                    <div class="skin2">
+                        <h3>custom background picture</h3>
+                        <button onclick="files()" class="new_Btn">Import custom background</button>
+                        <input type="file" id="files" />
+                        <br><br><br>
+                        <p class="color">Choose background color <input id = "colorpicker" type = "color" value="#3b9ad9"></p>
+                        <br><br>
+                        <button onclick="rmback()" class="new_Btn">Just wnat a background color? Click here</button>
+                    </div>
+                    <div class="flex">
+                    <div onclick="scale1()" id="cst1" class="cst">
+                       mega big booty
+                    </div>
+                    <div onclick="scale2()" id="cst2" class="cst">
+                        big booty
+                    </div>
+                    <div onclick="scale3()" id="cst3" class="cst">
+                        medium booty
+                    </div>  
+                    <div onclick="scale4()" id="cst4" class="cst">
+                        small booty
+                    </div>  
+                    <button class="mute" onclick="mute()">Mute site</button>
+                    <button class="mute" onclick="unmute()">Unmute site</button>
+                    </div>
+                </div>
+                <div id="box3" class="box3">
+                    About
+                </div>
+                <div id="box4" class="box4">
+                    Help
+                </div>
+                <div id="box5" class="box5">
+                    More
+                </div>
+            </div>
+            <div class="store">
+                <h1 class="lable">Store</h1>
+                <button id="buy2" class="buy"><span onclick="buy()" id="buy2"></span>buy hand for 16 slaps</span></button>
+                <button class="buy" id="buy2">buy slapper  for 100 slaps</button>
+                <button class="buy" id="buy2">hand</button>
+                <button class="buy" id="buy2">hand </button>
+                <button class="buy" id="buy2">hand </button>
+                <button class="buy" id="buy2">hand </button>
+                <button class="buy" id="buy2">hand </button>
+                <button class="buy" id="minus">buy for 999.999,999</button>
+
+            </div>
+    </div>
+
+<audio id="audio" src="https://github.com/ixl-math/imgs/blob/main/slap.mp3?raw=true" preload="auto">
+	Your browser does not support the <code>audio</code> element.
+</audio>
+    <!--javascript here-->
+    <script src="game.js">
+    
+    </script>
+    <script src="js.js"></script>
+    <script>
+        function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+</body>
+</html>
